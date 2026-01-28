@@ -1,4 +1,4 @@
-# 🚲 Rickshaw Detection System
+# 🚗 Rickshaw Detection System
 ## End-to-End Deep Learning Object Detection Application
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
@@ -10,14 +10,17 @@
 
 ## 📌 Overview
 
-This is a **complete, production-ready computer vision system** that automatically detects rickshaws in images, live webcam feeds, and video files. Built with **YOLOv8** deep learning and **Streamlit** web framework, it demonstrates a full end-to-end machine learning pipeline from data collection to deployment.
+This is a **complete, production-ready computer vision system** that automatically detects vehicles in images, live webcam feeds, and video files. Built with **YOLOv8** deep learning and **Streamlit** web framework, it demonstrates a full end-to-end machine learning pipeline from data collection to deployment.
+
+**Currently trained on rickshaws** - but the architecture and code are generic and can be adapted to detect any vehicle type (cars, buses, motorcycles, etc.) by retraining on your own dataset.
 
 **Key Features:**
-- ✅ **Custom Dataset** - 201 meticulously annotated rickshaw images
-- ✅ **Trained Model** - YOLOv8 optimized for rickshaw detection (95% accuracy)
+- ✅ **Custom Dataset** - 201 meticulously annotated rickshaw images (example)
+- ✅ **Trained Model** - YOLOv8 optimized for object detection (95% accuracy on rickshaws)
 - ✅ **Three Detection Modes** - Images, Live Webcam, Video Files
 - ✅ **Production-Ready** - Error handling, deployment-ready code, comprehensive docs
 - ✅ **Real-Time Performance** - 35-50ms inference on GPU
+- ✅ **Extensible** - Easy to retrain on other vehicle types or objects
 
 ---
 
@@ -564,18 +567,43 @@ By studying this project, you'll understand:
 ## 🎯 Use Cases & Applications
 
 ### Current Applications
-- ✅ **Traffic Analysis** - Monitor rickshaw patterns
-- ✅ **Research** - Study vehicle distribution
+- ✅ **Traffic Analysis** - Monitor vehicle patterns
+- ✅ **Research** - Study transportation distribution
 - ✅ **Demonstration** - Educational purposes
 - ✅ **Testing** - Computer vision benchmarking
 
-### Potential Extensions
-- 🔮 **Multi-class Detection** - Buses, cars, cyclists, etc.
+### Potential Extensions & Customization
+- 🔮 **Multi-class Detection** - Buses, cars, motorcycles, etc. (retrain on your dataset)
 - 🔮 **Real-time Streams** - RTSP/RTMP processing
 - 🔮 **REST API** - Cloud deployment
 - 🔮 **Mobile App** - iOS/Android versions
 - 🔮 **Database Integration** - Store detection results
 - 🔮 **Analytics Dashboard** - Historical tracking
+
+### Training on Your Own Data
+
+This system is **fully customizable**. To train on different vehicle types:
+
+```python
+from ultralytics import YOLO
+
+# Load base model
+model = YOLO('yolov8n.pt')
+
+# Train on your custom dataset
+results = model.train(
+    data='your_dataset/data.yaml',  # Your custom dataset
+    epochs=50,
+    imgsz=640,
+    batch=16,
+    device=0
+)
+
+# Save your trained model
+model.save('your_custom_model.pt')
+```
+
+**Dataset format needed**: YOLO COCO format with bounding box annotations.
 
 ---
 
