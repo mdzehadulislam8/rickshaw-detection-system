@@ -681,12 +681,3 @@ Thank you for exploring the **Rickshaw Detection System** — a complete, produc
 **Version**: 1.0  
 **Status**: ✅ Complete & Production Ready
 
----
-
-<div align="center">
-
-### 🚲 Rickshaw Detection System
-
-*Demonstrating the Power of Computer Vision & Machine Learning*
-
-</div>
