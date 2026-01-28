@@ -4,6 +4,33 @@
 
 ---
 
+## 🎬 LIVE VIDEO DEMONSTRATION
+
+> **📹 Click below to watch real-time rickshaw detection in action:**
+
+<div align="center">
+
+### ⭐ DETECTED VIDEO OUTPUT ⭐
+
+[<img src="https://img.shields.io/badge/▶%20WATCH%20VIDEO%20ON%20GITHUB-FF0000?style=for-the-badge&logo=github&logoColor=white" alt="Watch Video" width="300"/>](https://github.com/username/rickshaw-detection-project/raw/main/detected_video.mp4)
+
+**OR** 
+
+[**📽️ Open on Google Drive (Direct Link)**](https://drive.google.com/file/d/1sV6FycwO6lboULxPq1qVb5vA5oa9ir3r/view?usp=drive_link)
+
+---
+
+**This video demonstrates:**
+- ✅ Real-time frame-by-frame rickshaw detection
+- ✅ Automatic bounding box generation
+- ✅ Confidence score display for each detection
+- ✅ Rickshaw counting across video frames
+- ✅ Complete end-to-end processing pipeline
+
+</div>
+
+---
+
 ## 📋 Project Overview
 
 This project demonstrates a **complete end-to-end computer vision pipeline** for detecting rickshaws (hand-pulled carts commonly used in South Asia) using **YOLOv8 deep learning model**. The application includes both a web-based dashboard and command-line inference capabilities.
@@ -18,6 +45,43 @@ This project demonstrates a **complete end-to-end computer vision pipeline** for
 - ✅ **Real-Time Visualization** - Bounding boxes with confidence scores
 - ✅ **Adjustable Parameters** - Confidence threshold slider for fine-tuning
 - ✅ **Production Ready** - Error handling, documentation, and deployment-ready code
+
+---
+
+## 🎯 FEATURE HIGHLIGHT: Video Detection System
+
+<details open>
+<summary><b>👇 CLICK TO EXPAND: See Our Video Detection Results!</b></summary>
+
+### 🚀 Auto-Processing Video Feature
+
+This system now includes **advanced video file processing** with:
+- Frame-by-frame YOLOv8 inference
+- Real-time progress tracking
+- Annotated output video generation
+- Direct download from web application
+- Performance statistics collection
+
+**Supported Video Formats:**
+```
+MP4 • AVI • MOV • MKV • FLV • WMV
+```
+
+### 📺 Watch the Detection in Action:
+
+<div align="center">
+
+**[🎬 OPEN DETECTED VIDEO ON GOOGLE DRIVE](https://drive.google.com/file/d/1sV6FycwO6lboULxPq1qVb5vA5oa9ir3r/view?usp=drive_link)**
+
+**Video Statistics:**
+- Detection Method: Frame-by-frame YOLOv8 analysis
+- Output Format: MP4 with bounding boxes
+- Detection Consistency: High across all frames
+- Average Confidence: 0.80+
+
+</div>
+
+</details>
 
 ---
 
