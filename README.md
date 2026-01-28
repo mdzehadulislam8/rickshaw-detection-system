@@ -232,13 +232,13 @@ streamlit run app.py
 
 ---
 
-#### 🎬 Mode 3: Video File Processing (NEW!)
+#### 🎬 Mode 3: Video File Processing
 1. Select "🎬 Video File" in sidebar
 2. Upload video (MP4, AVI, MOV, MKV, FLV, WMV)
 3. Click "🔍 Start Detection"
 4. Monitor progress bar
 5. View statistics
-6. **Download** output video
+6. **Download** annotated output video
 
 **Best For**: Batch processing, archival analysis, detailed reports
 
@@ -343,7 +343,7 @@ rickshaw-detection-project/
 │       └── labels/
 │
 ├── 📁 runs/detect/                 ← Training results
-│   └── train4/                     ← Final training run
+│   └── train/                      ← Model training output
 │       ├── weights/
 │       │   └── best.pt             ← Best trained model
 │       └── results.png             ← Training curves
@@ -575,8 +575,8 @@ By studying this project, you'll understand:
 - [x] Performance optimization
 - [x] Code documentation
 - [x] Comprehensive README
-- [x] LaTeX academic report
 - [x] GitHub deployment
+- [x] Production testing
 
 ---
 
@@ -631,12 +631,46 @@ By studying this project, you'll understand:
 
 ---
 
+## � License & Usage Rights
+
+### Code License
+This project code is licensed under the **MIT License** - free to use, modify, and distribute for any purpose.
+You can:
+- ✅ Use the code in your own projects
+- ✅ Modify and improve the codebase
+- ✅ Distribute your modified versions
+- ✅ Use for commercial purposes
+
+See [LICENSE](LICENSE) file for complete terms.
+
+### Dataset & Model
+- **Custom Dataset** (201 rickshaw images) - **Proprietary** ⛔ Not included in repository
+  - For demonstration and educational purposes only
+  - Not available for distribution or commercial use
+  - To use in your own projects: collect and annotate your own dataset using Roboflow
+
+- **Pre-trained Model** (best.pt) - Provided as-is for inference/demonstration purposes
+
+### Attribution
+If you use this project code, please consider citing it:
+```
+@software{vehicle_detection_2026,
+  author = {Md. Zehadul Islam},
+  title = {Vehicle Detection System - YOLOv8 Implementation},
+  year = {2026},
+  url = {https://github.com/zehadul/vehicle-detection-system}
+}
+```
+
+---
+
 ## 👨‍💼 Author & Contact
 
 **Author**: Md. Zehadul Islam  
 **Project**: Vehicle Detection System (Rickshaw Detection)  
 **Purpose**: End-to-End Computer Vision & Machine Learning Application  
-**Date**: January 2026
+**Date**: January 2026  
+**Status**: ✅ Production Ready
 
 ---
 
